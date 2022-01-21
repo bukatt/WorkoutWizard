@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "workoutwizard",
+  "private_key_id": "66d95a86eb7aef5c50164276c8fea511cd2bb7a7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDlnlQBKphn3+sr\nR4vIAsnbnWfR2wqViY9SkGsIFoAAq4sm0lXLR59HnTv+CBIBZcW6jZVA87/bf3Q/\nHxraD7wKLgs5m3liKh3IbzH8OO/9wxxh9Ly2v0e+ruOl2GhpcQw2NNt6dMmPTdEa\nrmMFHfRpYU+8Uzo4qk8Qcx1Vh4LAkup1zNv3W1q02t0kThqowMiVNeTbiBUSQMWT\nkUUPvORzNySs7I0SwWvhkCav3ViCzH7+b1IsK4Q42yndI/fni31JBPH1pEWuUKgd\nGsOuJXChoSgmzRfybW4WsYHrRDGdZ/a9F3N3yH9Nr6J5owdqb0QiiI5n3ksUJ15G\nGpLRjoYBAgMBAAECggEACQGRROxxRt27ARsQyfsGBNWjLVF8lEntc60TbaFISv5v\neknUsKDyB+KMaFXTsvdVbpBAEuiclVTl79Xd/UCRvQp6STumYqnJOkPWP5DSJO9i\nrRrmzfopq7p7VlVrHvueoX+oPiDXiQXh1jyRyLEYlYuKD5ZqGa/gYwJI28JxZ/Eo\nMnmlX452krb3VhHggN3Cow0y8p0oNRun49oQT3HpAOxVSGbd1FovqrkkNEaYa2VV\n+tB+IRaE83Eu44bFLUhLCUX3HYI7RRcMxXTqjnrp9xRmEsvWWDu57swBZaP9mGYh\nDcHjZS3Xp4SO2qio4D3kk7nQ6p9Ephx1f7T2FvZBYQKBgQD/fegM8RK2nhJEbdIO\nwAr5vjF8FdFnCYL1OkdcdsP9X/2Y47TkcNDb5pLxZzkvwf5eips3D2yv2DoYExyZ\n/gWd39jGjgRVcSQSyf5V7KSQhXLFzDmS8pIXsY8pBJlsJI7dNe0n2gR+5i+Bqs6X\niuEXyNDBNwo6sV6BiqUH2By76QKBgQDmEz9NfFDk58XAy3oloRPfMRB1vOOpxm1Y\nF10dFNeYKlil2weIcVZkkUqylACPiE+1LWuKWRVFauxtZHq5Lr319jGofovLDy5K\nSCMmW+xKUzgUQTB2M/xipHsDots/u02To3R50e2MPqWWWqeqyp1HhvFzakY3/EtQ\n8GVhJ1JiWQKBgQCogYoCvxzwhODXcPcR82dJwD8y79DkfEl7I6zdNxecjSrdI5Gy\n+RVHc5OG0+XLsc7q28/zSKEOeTYXmsNKbVeXAIQgsJn7IFwCaGbulN0U1G8WNdPj\nL0lbhyg8jWQDBzmSfHalyg0dBQRgKR+Io3hCD5hfVsXQYBtMpPyjZ83LwQKBgEJm\nV6SjNi15/oaPsubdQADwBhIUu5ep3rDHvWXBOB+ASSlEtz3Xh9lqXSaAtFC4RFjD\njP/Wid8I5scDcq+zH7u2m8pHC01FSlTB0PMnIGCq98pQrg3PHw3Q7ne0LpaMFe2A\nBQOLZIVPJzbnXvBZnV6hQVnP2AgcVhg76OZLFOmxAoGBAKM8gs+Pcj1AZfSSyUh0\nlbaMvHRe4jkwh7OzMRwZfmjhsFxt2RE7zki+xcznjsaQosJF8ASh864bI2WA4xL2\nDXE1W+xNWt/+qEaot+VpIEXDRdceDjHjteE1nBHwPmwuVm7ZICTMkeK+lOt+inKB\n8ABYava3q1lCRlB8LdiEL+U1\n-----END PRIVATE KEY-----\n",
+  "client_email": "prod-minion@workoutwizard.iam.gserviceaccount.com",
+  "client_id": "109410680846922640629",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prod-minion%40workoutwizard.iam.gserviceaccount.com"
+}
