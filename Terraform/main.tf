@@ -29,15 +29,27 @@ resource "null_resource" "upload_default" {
     }
 }
 
-module "app-engine-default-service" {
-    source = "./modules/app-engine-service"
-    deployment_source_url = "https://storage.googleapis.com/${var.app_bucket_name}/${var.default_storage_object_name}"
-    project_id = var.project_id
-    runtime = "nodejs10"
-    service_name = "default"
-    deployment_object_name = var.default_storage_object_name
-    version_id = "v1"
-    entrypoint_shell = ""
+resource "google_app_engine_standard_app_version" "default" {
+  service    = "default"
+  runtime    = "nodejs10"
+  version_id = "v1"
+
+  entrypoint {
+    shell = ""
+  }
+
+  deployment {
+    files {
+      name = var.default_storage_object_name
+      source_url = "https://storage.googleapis.com/${var.app_bucket_name}/${var.default_storage_object_name}"
+    }
+  }
+
+  env_variables = {
+    port = "8080"
+  }
+
+  delete_service_on_destroy = true
 }
 
 #Frontend Service
@@ -51,15 +63,27 @@ resource "null_resource" "build2storage" {
     }
 }
 
-module "app-engine-service" {
-    source = "./modules/app-engine-service"
-    deployment_source_url = "https://storage.googleapis.com/${var.app_bucket_name}/${var.frontend_storage_object_name}"
-    project_id = var.project_id
-    runtime = "nodejs10"
-    service_name = "workoutwizard_frontend"
-    deployment_object_name = var.frontend_storage_object_name
-    version_id = "v1"
-    entrypoint_shell = ""
+resource "google_app_engine_standard_app_version" "workoutwizard_frontend" {
+  service    = "workoutwizard_frontend"
+  runtime    = "nodejs10"
+  version_id = "v1"
+
+  entrypoint {
+    shell = ""
+  }
+
+  deployment {
+    files {
+      name = var.frontend_storage_object_name
+      source_url = "https://storage.googleapis.com/${var.app_bucket_name}/${var.frontend_storage_object_name}"
+    }
+  }
+
+  env_variables = {
+    port = "8080"
+  }
+
+  delete_service_on_destroy = true
 }
 
 #Backend Service
@@ -73,17 +97,30 @@ resource "null_resource" "upload_backend" {
     }
 }
 
-module "app-engine-backend-service" {
-    source = "./modules/app-engine-service"
-    deployment_source_url = "https://storage.googleapis.com/${var.app_bucket_name}/${var.backend_storage_object_name}"
-    project_id = var.project_id
-    runtime = "python3"
-    service_name = "workoutwizard_backend"
-    deployment_object_name = var.backend_storage_object_name
-    version_id = "v1"
-    entrypoint_shell = ""
+resource "google_app_engine_standard_app_version" "workoutwizard_backend" {
+  service    = "workoutwizard_backend"
+  runtime    = "python3"
+  version_id = "v1"
 
+  entrypoint {
+    shell = ""
+  }
+
+  deployment {
+    files {
+      name = var.backend_storage_object_name
+      source_url = "https://storage.googleapis.com/${var.app_bucket_name}/${var.backend_storage_object_name}"
+    }
+  }
+
+  env_variables = {
+    port = "8080"
+  }
+
+  delete_service_on_destroy = true
 }
+
+
 
 module "cloud-sql" {
     source = "./modules/cloud-sql"

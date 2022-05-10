@@ -19,5 +19,4 @@ resource "google_app_engine_standard_app_version" "workoutwizard" {
   }
 
   delete_service_on_destroy = true
-
 }

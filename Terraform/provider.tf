@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "google" {
-    credentials = file("${path.module}/prod-minion-creds.json")
+    credentials = file("${path.module}/prod-svc-creds.json")
     project = "workoutwizard"
     region = "us-east1"
     zone = "us-east1-b"
